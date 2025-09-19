@@ -12,3 +12,4 @@ This time simply load the iso and don't forget to use "Bridge Network", you can 
 |-----------|------------------------------------------|
 |  level00  |                 level00                  |
 |  level01  | uSq2ehEGT6c9S24zbshexZQBXUGrncxn5sD5QfGL |
+|  level02  | PwBLgNa8p8MTKW57S7zxVAQCxnCpV8JqTTs9XEBv |
