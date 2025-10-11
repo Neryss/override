@@ -16,7 +16,7 @@ This time simply load the iso and don't forget to use "Bridge Network", you can 
 |  level03  | Hh74RPnuQ9sa5JAEXgNWCqz7sXGnh5J5M9KfPg3H |
 |  level04  | kgv3tkEb9h2mLkRsPkXRfc2mHbjMxQzvb2FrgKkf |
 |  level05  | 3v8QLcN5SAhPaZZfEasfmXdwyR59ktDEMAwHF3aN |
-|  level06  |                                          |
+|  level06  | h4GtNnaMs2kZFN92ymTr2DcJHAzMfzLW25Ep59mq |
 |  level07  |                                          |
 |  level08  |                                          |
 |  level09  |                                          |
