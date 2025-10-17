@@ -8,8 +8,8 @@ If we pass the check done in `auth()`, we gain access to the password, simple as
 So what are the checks we need to deal with:
 
 - First of all, our login needs to be longer that 5 characters, else the function returns
-- There is also a `ptrace()` call that we will need to dodge as we will explain further down
-- After that, during the hashing loop, each character ASCII value needs to be higher than 31
+- There is also a `ptrace()` call, here to detect GDB tampering, that we will need to dodge 
+- After that, during the hashing loop, each character ASCII value needs to be higher than 31 (so no whitespaces except "space")
 
 Our input serial is then compared to the desired hash result and returns if they are equal or not, if they are, then we get access to the password.
 
@@ -19,7 +19,7 @@ As usual you can find the decompilation [here](./level06.c)
 
 IMPORTANT NOTE: since the hashing method uses the login value during its loop, keep the same login name during both execution!
 
-Since out input is directly compared to the desired result, we can use GDB to get it, circumventing the call to `ptrace` is quite easy, we can either break before it and jump after it, or just modify its return value which is compared in the same line. Here I used the later approach:
+Since our input is directly compared to the desired result, we can use GDB to get it, circumventing the call to `ptrace` is quite easy, we can either break before it and jump after it, or just modify its return value which is compared in the same line. Here I used the later approach:
 
 ```bash
 (gdb) b *auth+114 
@@ -90,4 +90,9 @@ GbcPDRgsFK77LNnnuh7QyFYA2942Gp8yKj9KrWD8
 ```
 
 </details>
+
+## Another approach
+
+We can also create another [program](./resources/hash.c) using the same hashing to get the desired result for a specific output.
+
 
