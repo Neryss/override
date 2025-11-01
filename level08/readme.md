@@ -8,7 +8,7 @@ To do that, it proceeds as follows:
 
 - First it opens a log file `./backups/.log` using `fopen()`.
 - It then opens a second stream, read only, this time from the path we passed in `argv[1]`
-- Last stream, which will be the copy destination of the file we specified using `argv[1]` will be located at `./backups/ + argv[1]`
+- Last stream, which will be the copy destination of the file we specified using `argv[1]`, will be located at `./backups/ + argv[1]`
 
 ## Exploit
 
